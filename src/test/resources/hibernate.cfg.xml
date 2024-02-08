@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/Movies</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
+    <property name="hibernate.show_sql ">true</property>
+    <property name="hbm2ddl.auto">validate</property>
+
+    <mapping class="org.example.Entity.Actor"/>
+    <mapping class="org.example.Entity.Address"/>
+    <mapping class="org.example.Entity.Category"/>
+    <mapping class="org.example.Entity.City"/>
+    <mapping class="org.example.Entity.Country"/>
+    <mapping class="org.example.Entity.Customer"/>
+    <mapping class="org.example.Entity.Film"/>
+    <mapping class="org.example.Entity.FilmText"/>
+    <mapping class="org.example.Entity.Inventory"/>
+    <mapping class="org.example.Entity.Language"/>
+    <mapping class="org.example.Entity.Payment"/>
+    <mapping class="org.example.Entity.Rental"/>
+    <mapping class="org.example.Entity.Staff"/>
+    <mapping class="org.example.Entity.Store"/>
+  </session-factory>
+
+
+</hibernate-configuration>
